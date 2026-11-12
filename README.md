@@ -23,6 +23,8 @@ logo.svg        Same mark as the app logo (512×512 viewBox)
 logo.png        512×512 raster export (Google consent screen logo; ≤ 2 MB)
 robots.txt      Crawler rules + sitemap pointer
 sitemap.xml     The three pages
+LICENSE         MIT (this site's content and assets)
+DEMO_VIDEO.md   Google OAuth verification — demo video plan & checklist
 .nojekyll       Tells GitHub Pages to serve files verbatim
 README.md       This file
 ```
@@ -77,5 +79,5 @@ rsvg-convert -w 512 -h 512 logo.svg -o logo.png
 
 ## License
 
-The site content and assets are MIT-licensed, same as the software:
-see the [repository LICENSE](https://github.com/ghosttrace/ghosttrace/blob/main/LICENSE).
+The site content and assets are MIT-licensed — see [LICENSE](LICENSE), same terms the
+software itself will ship under.
