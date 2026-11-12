@@ -52,3 +52,34 @@ the video, the privacy policy and the scope justification text, and mismatches a
 - Do not hit production traffic with unverified scopes (quota + user disruption).
 - Keep it under ~5 minutes; every scope requested must have a "used in the app" moment.
 - Upload **unlisted** on YouTube, paste the link into the verification form.
+
+## App audit — localhost:3001, 2026-11-12 (read-only walkthrough)
+
+**Ready to demo (matches the policy as written):**
+
+- `/integrations` — per-scope consent checkboxes ("Gmail security alerts", "Calendar events",
+  "Recent Drive files") = the "optional, separately consented" claim, on screen.
+- `/timeline` — search + source filter; a `token.scopes` event literally logs the granted
+  scope list; `account.identity` event shows name/email handling.
+- `/security` — audit log (`auth.login`, `auth.google_connected` with scopes array) and the
+  detection-rule builder (event type / source / threshold / severity).
+- `/insights` — hour-of-day + weekday heatmaps, streak, cross-account signals.
+- `/settings` — delete-account copy matches the policy verbatim ("Connected Google tokens
+  are revoked first", permanent, cascades); API keys stored hashed; password change signs
+  out every session.
+
+**Blockers before recording:**
+
+1. **Per-session revocation missing** — policy promises it; the UI only has "Sign out
+   everywhere". Add a revoke button per row in Security Center → Active sessions.
+2. **Retention setting missing** — policy says "configurable, default 90 days"; no
+   retention field exists in Settings. Add it (or amend the policy).
+3. **Sensitive scopes not yet granted** — currently only `openid email profile`.
+   Reconnect with the Gmail/Calendar/Drive checkboxes on, and have a
+   `no-reply@accounts.google.com` security alert in the inbox beforehand (shot 4).
+4. **No companion device paired** — Device Intelligence shows "No devices registered";
+   shots 6–7 need one device sending battery/network/location telemetry.
+5. **Running in dev mode** — the Next.js dev-tools overlay and issues badge are on
+   screen. Record from a production build (`next build && next start`) or a Vercel
+   preview, and ideally serve frontend + API from one origin (Reports currently links
+   the API at `:8000` while the app is on `:3001`).
