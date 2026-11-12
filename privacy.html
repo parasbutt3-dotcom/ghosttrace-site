@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en" data-zcode-design>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — GHOSTTRACE</title>
+  <meta name="description" content="What GHOSTTRACE collects, how it is protected, and how it is deleted. GHOSTTRACE is self-hosted software — there is no GHOSTTRACE server." />
+  <meta name="theme-color" content="#0a0e1a" />
+  <link rel="canonical" href="https://parasbutt3-dotcom.github.io/ghosttrace-site/privacy.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="GHOSTTRACE" />
+  <meta property="og:url" content="https://parasbutt3-dotcom.github.io/ghosttrace-site/privacy.html" />
+  <meta property="og:title" content="Privacy Policy — GHOSTTRACE" />
+  <meta property="og:description" content="What GHOSTTRACE collects, how it is protected, and how it is deleted. GHOSTTRACE is self-hosted software — there is no GHOSTTRACE server." />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="logo.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="topnav">
+    <div class="container topnav-inner">
+      <a class="brand" href="index.html" aria-label="GHOSTTRACE home">
+        <svg viewBox="0 0 512 512" width="30" height="30" aria-hidden="true" focusable="false">
+          <circle cx="256" cy="256" r="180" fill="none" stroke="#22d3ee" stroke-width="26"/>
+          <path d="M256 28v24M256 460v24M28 256h24M460 256h24" fill="none" stroke="#22d3ee" stroke-width="26" stroke-linecap="round"/>
+          <path d="M196 302V222a60 60 0 0 1 120 0v80q-15 22-30 0q-15 22-30 0q-15 22-30 0q-15 22-30 0Z" fill="none" stroke="#22d3ee" stroke-width="26" stroke-linejoin="round" stroke-linecap="round"/>
+          <circle cx="235" cy="230" r="14" fill="#22d3ee"/>
+          <circle cx="277" cy="230" r="14" fill="#22d3ee"/>
+        </svg>
+        <span class="brand-word"><span class="accent">GHOST</span>TRACE</span>
+      </a>
+      <nav class="nav-right" aria-label="Primary">
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="index.html#features">Features</a>
+          <a href="terms.html">Terms</a>
+        </div>
+        <a class="btn btn-secondary btn-sm" href="https://github.com/ghosttrace/ghosttrace" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+          GitHub
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <div class="legal-head">
+        <p class="eyebrow">Legal</p>
+        <h1>Privacy Policy</h1>
+        <p class="meta">Last updated: November 12, 2026</p>
+        <nav class="toc" aria-label="Contents">
+          <h2>Contents</h2>
+          <ol>
+            <li><a href="#self-hosted">GHOSTTRACE is self-hosted</a></li>
+            <li><a href="#this-site">This website</a></li>
+            <li><a href="#integrations">Data collected per integration</a></li>
+            <li><a href="#storage">Storage &amp; protection</a></li>
+            <li><a href="#never">What never happens</a></li>
+            <li><a href="#deletion">Deletion &amp; your controls</a></li>
+          </ol>
+        </nav>
+      </div>
+
+      <div class="prose">
+        <section id="self-hosted" aria-labelledby="self-hosted-title">
+          <h2 id="self-hosted-title">1. GHOSTTRACE is self-hosted software</h2>
+          <p>GHOSTTRACE is open-source, self-hosted software. The operator runs their own instance — on their own machine or homelab. <strong>There is no GHOSTTRACE company server.</strong> The people who write the software do not host your data, receive your data, or operate any central service.</p>
+          <p>Because each instance is run by its operator, the operator is responsible for that deployment: what gets connected, where the instance runs, and how it complies with applicable law. This policy describes what the software itself can collect and how it handles what it collects.</p>
+        </section>
+
+        <section id="this-site" aria-labelledby="this-site-title">
+          <h2 id="this-site-title">2. This website</h2>
+          <p>This site (the landing page, this policy, and the terms page) is plain static HTML served from a repository. It sets no cookies, loads no third-party scripts or fonts, runs <strong>no analytics and no tracking pixels</strong>, and asks for no personal information.</p>
+        </section>
+
+        <section id="integrations" aria-labelledby="integrations-title">
+          <h2 id="integrations-title">3. Data collected per integration</h2>
+          <p>Nothing is collected until an operator enables an integration, and every integration is optional. What each one can collect is listed below — exactly, and nothing beyond it.</p>
+
+          <h3>3.1 Google account (OAuth)</h3>
+          <p>Connecting a Google account uses OAuth with the <code>openid</code>, <code>email</code> and <code>profile</code> scopes, which return your <strong>name, email address and profile information</strong>. With optional, separately consented read-only scopes:</p>
+          <ul>
+            <li><strong>Gmail (<code>gmail.readonly</code>)</strong> — only security-alert emails sent by <code>no-reply@accounts.google.com</code> are read, and only the <strong>subject line and date</strong> are stored. Message bodies are never read into storage.</li>
+            <li><strong>Calendar (<code>calendar.readonly</code>)</strong> — the <strong>title, time and location of recent events</strong>.</li>
+            <li><strong>Drive (<code>drive.readonly</code>)</strong> — <strong>file names and modified times only</strong>. File contents are never read.</li>
+          </ul>
+
+          <h3>3.2 GitHub</h3>
+          <p>GHOSTTRACE reads your <strong>public activity events</strong>: pushes, pull requests, issues and stars. If you optionally add a personal access token (PAT), it grants access to <strong>your own private events only</strong> — never anyone else's.</p>
+
+          <h3>3.3 ActivityWatch &amp; Wazuh</h3>
+          <p>These integrations collect nothing new. They read data <strong>already collected by those local tools on your machine</strong>, and only via the APIs ActivityWatch and Wazuh themselves expose.</p>
+
+          <h3>3.4 Android / iOS companion app</h3>
+          <p>The companion app reports device telemetry: <strong>battery level, network type, OS/app version</strong>, <strong>device location</strong> — only when you grant the explicit OS permission for it — and <strong>app-usage events your device reports</strong>.</p>
+
+          <h3>3.5 Google Takeout import</h3>
+          <p>Whatever you choose to upload, GHOSTTRACE imports — for example <strong>location history or activity entries</strong> from your own Takeout archive. The software does not fetch Takeout data on its own.</p>
+        </section>
+
+        <section id="storage" aria-labelledby="storage-title">
+          <h2 id="storage-title">4. Storage &amp; protection</h2>
+          <p>Inside your instance, collected data is protected as follows:</p>
+          <table class="scope-table">
+            <thead><tr><th>Concern</th><th>How GHOSTTRACE handles it</th></tr></thead>
+            <tbody>
+              <tr><td>Passwords</td><td>Hashed with bcrypt — never stored in plain text.</td></tr>
+              <tr><td>OAuth tokens &amp; secrets</td><td>Encrypted at rest with Fernet.</td></tr>
+              <tr><td>Sessions</td><td>Access and refresh JWTs backed by server-side session records, with per-session revocation.</td></tr>
+              <tr><td>Accountability</td><td>An audit log of security events.</td></tr>
+              <tr><td>Retention</td><td>Configurable, with a default of <strong>90 days</strong> — collected events age out unless the operator raises the window.</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section id="never" aria-labelledby="never-title">
+          <h2 id="never-title">5. What never happens</h2>
+          <p>GHOSTTRACE does not <strong>sell data</strong>. It includes <strong>no third-party analytics</strong> and <strong>no tracking pixels</strong> — not in the software, and not on this website.</p>
+        </section>
+
+        <section id="deletion" aria-labelledby="deletion-title">
+          <h2 id="deletion-title">6. Deletion &amp; your controls</h2>
+          <p>From <strong>Settings</strong>, you can delete your account. Deleting it:</p>
+          <ul>
+            <li>revokes your Google tokens,</li>
+            <li>and permanently cascades deletion of <strong>all collected events</strong> tied to your account.</li>
+          </ul>
+          <p>You can also inspect every active session and API key, and revoke any one of them individually without deleting the whole account. If you use an instance operated by someone else, the operator controls the deployment — deletion of your data on their instance runs through their copy of this software and their retention settings.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pagefoot">
+    <div class="container">
+      <div class="foot-bottom" style="border-top:0;padding-top:0">
+        <span>© 2026 GHOSTTRACE contributors · MIT</span>
+        <span><a href="index.html">Home</a> · <a href="terms.html">Terms</a> · <a href="https://github.com/ghosttrace/ghosttrace" rel="noopener">GitHub</a></span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://parasbutt3-dotcom.github.io/ghosttrace-site/sitemap.xml

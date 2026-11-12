@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en" data-zcode-design>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GHOSTTRACE — your activity, in one timeline</title>
+  <meta name="description" content="GHOSTTRACE is an open-source, self-hosted personal intelligence platform. Google, GitHub, ActivityWatch, Wazuh and your phone, unified in one private timeline — your data stays on your machine." />
+  <meta name="theme-color" content="#0a0e1a" />
+  <link rel="canonical" href="https://parasbutt3-dotcom.github.io/ghosttrace-site/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="GHOSTTRACE" />
+  <meta property="og:url" content="https://parasbutt3-dotcom.github.io/ghosttrace-site/" />
+  <meta property="og:title" content="GHOSTTRACE — your activity, in one timeline" />
+  <meta property="og:description" content="Self-hosted personal intelligence. Your data stays on your machine." />
+  <meta property="og:image" content="https://parasbutt3-dotcom.github.io/ghosttrace-site/logo.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="GHOSTTRACE — your activity, in one timeline" />
+  <meta name="twitter:description" content="Self-hosted personal intelligence. Your data stays on your machine." />
+  <meta name="twitter:image" content="https://parasbutt3-dotcom.github.io/ghosttrace-site/logo.png" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="logo.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="topnav">
+    <div class="container topnav-inner">
+      <a class="brand" href="index.html" aria-label="GHOSTTRACE home">
+        <svg viewBox="0 0 512 512" width="30" height="30" aria-hidden="true" focusable="false">
+          <circle cx="256" cy="256" r="180" fill="none" stroke="#22d3ee" stroke-width="26"/>
+          <path d="M256 28v24M256 460v24M28 256h24M460 256h24" fill="none" stroke="#22d3ee" stroke-width="26" stroke-linecap="round"/>
+          <path d="M196 302V222a60 60 0 0 1 120 0v80q-15 22-30 0q-15 22-30 0q-15 22-30 0q-15 22-30 0Z" fill="none" stroke="#22d3ee" stroke-width="26" stroke-linejoin="round" stroke-linecap="round"/>
+          <circle cx="235" cy="230" r="14" fill="#22d3ee"/>
+          <circle cx="277" cy="230" r="14" fill="#22d3ee"/>
+        </svg>
+        <span class="brand-word"><span class="accent">GHOST</span>TRACE</span>
+      </a>
+      <nav class="nav-right" aria-label="Primary">
+        <div class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#privacy">Privacy</a>
+          <a href="privacy.html">Policy</a>
+          <a href="terms.html">Terms</a>
+        </div>
+        <!-- Repo placeholder: replace href with your published repository URL -->
+        <a class="btn btn-secondary btn-sm" href="https://github.com/ghosttrace/ghosttrace" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+          GitHub
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ─── hero ──────────────────────────────────────────────────────── -->
+    <section class="section hero" aria-labelledby="hero-title">
+      <div class="container hero-split">
+        <div class="reveal">
+          <p class="eyebrow">Self-hosted · Open source · MIT</p>
+          <h1 id="hero-title">
+            <span class="brand-line">GHOSTTRACE</span>
+            Your activity, in one timeline.
+          </h1>
+          <p class="lead">A self-hosted personal intelligence platform. GHOSTTRACE pulls your accounts, sensors and devices into one private timeline — and your data stays on your machine, where it belongs.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#quickstart">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 21h16"/></svg>
+              Deploy your instance
+            </a>
+            <a class="btn btn-secondary" href="https://github.com/ghosttrace/ghosttrace" rel="noopener">View the source</a>
+          </div>
+        </div>
+
+        <figure class="timeline-panel reveal" style="animation-delay:.15s">
+          <div class="timeline-head">
+            <p class="label"><span class="live-dot" aria-hidden="true"></span>Unified timeline — today</p>
+            <p class="label" style="letter-spacing:.08em">Sample data</p>
+          </div>
+          <ul class="timeline-list">
+            <li class="timeline-row">
+              <time>08:12</time>
+              <span class="src">GitHub</span>
+              <span class="evt">push → ghosttrace/main · 3 commits</span>
+            </li>
+            <li class="timeline-row">
+              <time>08:47</time>
+              <span class="src">Gmail</span>
+              <span class="evt">security alert — “New sign-in on Windows” (subject + date only)</span>
+            </li>
+            <li class="timeline-row">
+              <time>09:00</time>
+              <span class="src">Calendar</span>
+              <span class="evt">Design review · Studio 4 · 09:00–09:30</span>
+            </li>
+            <li class="timeline-row">
+              <time>11:30</time>
+              <span class="src">ActivityWatch</span>
+              <span class="evt">focus window — 2 h 14 m</span>
+            </li>
+            <li class="timeline-row">
+              <time>14:02</time>
+              <span class="src">Wazuh</span>
+              <span class="evt">agent heartbeat OK — workstation</span>
+            </li>
+            <li class="timeline-row">
+              <time>19:40</time>
+              <span class="src">Android</span>
+              <span class="evt">entered home geofence</span>
+            </li>
+          </ul>
+          <figcaption class="timeline-foot">6 sources, one feed — stored only in your instance.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ─── features ──────────────────────────────────────────────────── -->
+    <section class="section" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">What it watches</p>
+          <h2 id="features-title">Every signal you already generate, in one place</h2>
+          <p class="lead">Ten integrations feed one timeline. Each one is opt-in, read-only where it counts, and yours to disconnect.</p>
+        </div>
+        <div class="features-grid">
+          <article class="feature">
+            <span class="feature-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M3 12h18"/><circle cx="8" cy="12" r="2.4"/><circle cx="16" cy="12" r="2.4"/></svg></span>
+            <h3>Unified activity timeline</h3>
+            <p>Every event from every connected source, merged into one searchable, filterable chronological feed.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 7 3v5c0 4.4-3 7.7-7 9-4-1.3-7-4.6-7-9V6l7-3Z"/><path d="M12 8.5V12"/><path d="M12 15h.01"/></svg></span>
+            <h3>Google account integration</h3>
+            <p>Gmail security alerts, Calendar events and Drive files — read-only metadata, never message bodies.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="6" cy="6" r="2.2"/><circle cx="6" cy="18" r="2.2"/><circle cx="18" cy="8" r="2.2"/><path d="M6 8.2v7.6"/><path d="M18 10.2c0 4-3.6 5.8-8 5.8"/></svg></span>
+            <h3>GitHub activity</h3>
+            <p>Pushes, pull requests, issues and stars — your public events by default, private ones only if you add a token.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 2"/></svg></span>
+            <h3>ActivityWatch</h3>
+            <p>Reads the time-tracking data ActivityWatch already collects locally — through its own API.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4 2.8 19.5h18.4L12 4Z"/><path d="M12 10v3.8"/><path d="M12 16.6h.01"/></svg></span>
+            <h3>Wazuh SIEM</h3>
+            <p>Bring your home-network security alerts into the same timeline as everything else.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.8" width="10" height="18.4" rx="2.4"/><path d="M10.8 18.8h2.4"/></svg></span>
+            <h3>Android / iOS companion</h3>
+            <p>Device telemetry from your phone: battery, network, location — only when you grant OS permission.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="4.6" rx="1.4"/><path d="M4.6 9.1v9.9A1.6 1.6 0 0 0 6.2 20.6h11.6a1.6 1.6 0 0 0 1.6-1.6V9.1"/><path d="M10 12.8h4"/></svg></span>
+            <h3>Google Takeout importer</h3>
+            <p>Backfill years of history: upload your Takeout archive and its entries land on the same timeline.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4.5h16l-6.3 7.7v5.4L7.7 20.4v-8.2L4 4.5Z"/></svg></span>
+            <h3>Detection rules &amp; alerts</h3>
+            <p>Declarative rules over your event stream — unusual sign-ins, dead agents, anything you define.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M3.5 20.5h17"/><path d="M7 20.5V13"/><path d="M12 20.5V5.5"/><path d="M17 20.5v-5"/></svg></span>
+            <h3>Insights &amp; analytics</h3>
+            <p>Heatmaps, streaks and correlations across sources — patterns no single app could show you.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="16.5" r="4.2"/><path d="m10.6 13.4 8.9-8.9"/><path d="m15.5 8.5 2.6 2.6"/><path d="M19.5 4.5 21 6"/></svg></span>
+            <h3>Sessions &amp; API keys</h3>
+            <p>Every device and token is a named session you can inspect and revoke — individually, from Settings.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── how privacy works ─────────────────────────────────────────── -->
+    <section class="section" id="privacy" aria-labelledby="privacy-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">How privacy works</p>
+          <h2 id="privacy-title">There is no GHOSTTRACE server to trust</h2>
+          <p class="lead">GHOSTTRACE is software you run, not a service you sign up for. Every byte lives on hardware you control.</p>
+        </div>
+        <div class="grid-3">
+          <div class="pillar">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="m8 13-2 2 2 2"/><path d="m13 15 2-2-2-2"/></svg>
+            <h3>Runs on your hardware</h3>
+            <p>One <code>docker compose up</code> on your own machine or homelab. There is no company server, no cloud sync, no phone-home. The integrations talk to their APIs from your instance, under your keys.</p>
+          </div>
+          <div class="pillar">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10.5" width="16" height="10" rx="2"/><path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"/><path d="M12 14.5v2.5"/></svg>
+            <h3>Minimal, scoped reads</h3>
+            <p>OAuth scopes are read-only and gated by explicit consent. Gmail access reads security-alert subjects and dates only — never message bodies, never everything else in your mailbox.</p>
+          </div>
+          <div class="pillar">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m9 12 2 2 4-5"/><path d="M12 3v0"/></svg>
+            <h3>Deletion is real</h3>
+            <p>Deleting your account from Settings revokes the Google tokens and permanently cascades deletion of every collected event. Retention is configurable — default 90 days, not forever.</p>
+          </div>
+        </div>
+        <div class="scope-chips" role="list" aria-label="OAuth scopes GHOSTTRACE can request">
+          <span class="chip" role="listitem">openid</span>
+          <span class="chip" role="listitem">email</span>
+          <span class="chip" role="listitem">profile</span>
+          <span class="chip" role="listitem">gmail.readonly — optional</span>
+          <span class="chip" role="listitem">calendar.readonly — optional</span>
+          <span class="chip" role="listitem">drive.readonly — optional</span>
+        </div>
+        <p class="site-privacy-note">This website is plain static HTML served from a repo. No analytics, no tracking pixels, no third-party scripts, no cookies.</p>
+      </div>
+    </section>
+
+    <!-- ─── quick start ───────────────────────────────────────────────── -->
+    <section class="section" id="quickstart" aria-labelledby="quickstart-title">
+      <div class="container quickstart-grid">
+        <div class="terminal">
+          <div class="terminal-bar">
+            <p class="label">bash</p>
+            <button class="copy-btn" id="copy-commands" type="button">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M15.5 5.5H6a2.5 2.5 0 0 0-2.5 2.5v9.5"/></svg>
+              <span id="copy-label">Copy</span>
+            </button>
+          </div>
+<pre id="quickstart-cmds"><code><span class="prompt">$</span> git clone https://github.com/ghosttrace/ghosttrace
+<span class="prompt">$</span> cd ghosttrace
+<span class="prompt">$</span> docker compose up -d
+<span class="comment"># your dashboard is now served from your own machine</span></code></pre>
+        </div>
+        <div>
+          <p class="eyebrow">Quick start</p>
+          <h2 id="quickstart-title">Three commands to your own instance</h2>
+          <ul class="quickstart-points">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>No accounts to create.</strong> You are the operator — the first user is you.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>No data leaves the box.</strong> Connect integrations one at a time, on your schedule.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>MIT-licensed.</strong> Read it, fork it, self-host it anywhere.</span></li>
+          </ul>
+          <div class="hero-cta" style="margin-top:var(--gap-md)">
+            <a class="btn btn-secondary" href="https://github.com/ghosttrace/ghosttrace" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+              Star it on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pagefoot">
+    <div class="container">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <a class="brand" href="index.html" aria-label="GHOSTTRACE home">
+            <svg viewBox="0 0 512 512" width="30" height="30" aria-hidden="true" focusable="false">
+              <circle cx="256" cy="256" r="180" fill="none" stroke="#22d3ee" stroke-width="26"/>
+              <path d="M256 28v24M256 460v24M28 256h24M460 256h24" fill="none" stroke="#22d3ee" stroke-width="26" stroke-linecap="round"/>
+              <path d="M196 302V222a60 60 0 0 1 120 0v80q-15 22-30 0q-15 22-30 0q-15 22-30 0q-15 22-30 0Z" fill="none" stroke="#22d3ee" stroke-width="26" stroke-linejoin="round" stroke-linecap="round"/>
+              <circle cx="235" cy="230" r="14" fill="#22d3ee"/>
+              <circle cx="277" cy="230" r="14" fill="#22d3ee"/>
+            </svg>
+            <span class="brand-word"><span class="accent">GHOST</span>TRACE</span>
+          </a>
+          <p>Open-source, self-hosted personal intelligence. Your activity, in one timeline — on your machine.</p>
+        </div>
+        <nav class="foot-col" aria-label="Product">
+          <h3>Product</h3>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#privacy">How privacy works</a></li>
+            <li><a href="#quickstart">Quick start</a></li>
+          </ul>
+        </nav>
+        <nav class="foot-col" aria-label="Project">
+          <h3>Project</h3>
+          <ul>
+            <li><a href="https://github.com/ghosttrace/ghosttrace" rel="noopener">Source &amp; issues</a></li>
+            <li><a href="https://github.com/ghosttrace/ghosttrace/blob/main/LICENSE" rel="noopener">MIT license</a></li>
+          </ul>
+        </nav>
+        <nav class="foot-col" aria-label="Legal">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="privacy.html">Privacy policy</a></li>
+            <li><a href="terms.html">Terms of service</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="foot-bottom">
+        <span>© 2026 GHOSTTRACE contributors · MIT</span>
+        <span>no analytics · no trackers · no servers but yours</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Copy button for the quick-start commands — progressive enhancement.
+    (function () {
+      var btn = document.getElementById("copy-commands");
+      var pre = document.getElementById("quickstart-cmds");
+      var label = document.getElementById("copy-label");
+      if (!btn || !pre) return;
+      btn.addEventListener("click", function () {
+        var text = pre.textContent.replace(/^\$\s/gm, "").replace(/^#.*\n?/gm, "").trim();
+        var done = function (msg) {
+          label.textContent = msg;
+          setTimeout(function () { label.textContent = "Copy"; }, 1800);
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(
+            function () { done("Copied"); },
+            function () { done("Press Ctrl+C"); }
+          );
+        } else {
+          done("Press Ctrl+C");
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
